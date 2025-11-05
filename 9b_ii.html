@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Fibonacci</title>
+<script>
+function fibonacci() {
+    var n = parseInt(document.getElementById("num").value);
+    var a = 0, b = 1, series = "";
+    for (var i = 1; i <= n; i++) {
+        series += a + " ";
+        var c = a + b;
+        a = b;
+        b = c;
+    }
+    alert("Fibonacci series up to " + n + " terms: " + series);
+}
+</script>
+</head>
+<body>
+<input type="text" id="num">
+<button onclick="fibonacci()">Fibonacci</button>
+</body>
+</html>
