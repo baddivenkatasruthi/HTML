@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Fibonacci</title>
+<script>
+function show() {
+    var n = parseInt(prompt("Enter a value"));
+    var a = 0, b = 1, fib = "";
+
+    for (var i = 1; i <= n; i++) {
+        fib += a + " ";
+        var c = a + b;
+        a = b;
+        b = c;
+    }
+
+    alert("Fibonacci Series up to " + n + " terms: " + fib);
+}
+</script>
+</head>
+<body onload="show()">
+</body>
+</html>
