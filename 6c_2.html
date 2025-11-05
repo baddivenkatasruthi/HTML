@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Input Methods</title>
+  <script>
+    function getInput() {
+   
+      let name = prompt("Enter your name:");
+
+    
+      let age = document.getElementById("ageInput").value;
+
+      
+      alert("Name (from prompt): " + name + "\nAge (from form): " + age);
+    }
+  </script>
+</head>
+<body>
+  <h2>Input Methods</h2>
+  <input type="number" id="ageInput" placeholder="Enter your age" />
+  <button onclick="getInput()">Get Inputs</button>
+</body>
+</html>
